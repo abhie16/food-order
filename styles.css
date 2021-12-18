@@ -1,0 +1,109 @@
+
+body {
+  margin: 0px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  margin: 0px;
+  font-size: 2.5rem;
+}
+
+p{
+  line-height: 1.5;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.section-img {
+  margin-top: 0px;
+  background: url(bg-img.jpg) no-repeat;
+  background-size: cover;
+  /* cover whole cover with img*/
+  height: 109vh;
+  /*vh -> view port means equal to desktop screen*/
+
+  font-weight: 300;
+}
+
+.section-wrapper {
+  color: white;
+  position: absolute;
+  bottom: 186px;
+  background-color: rgb(204, 0, 0, 0.8);
+  width:100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.form button{
+  background-color: #404040;
+  margin-top: 20px;
+  padding: 8px 15px;
+  border-radius: 2rem;
+  border: none;
+}
+
+.input{
+  margin: 10px auto 10px auto;
+  width: 30%;
+  display: block;
+  border-radius: 2rem;
+  padding: .6rem;
+  border: none;
+}
+
+#btn-order-food{
+   margin-top: 5%;
+}
+
+.row{
+  margin: 5% 3%;
+}
+
+#testimonials{
+  padding: 5% 3%;
+  background-color: rgb(248, 248, 248);
+
+}
+
+.img{
+  width:50%;
+}
+
+.table{
+margin-bottom: 0;
+}
+.bottom-container{
+  padding: 6% 8%;
+  background-color: rgb(248, 248, 248);
+}
+
+.navbar{
+  margin-bottom: 5%;
+}
+
+.logo{
+  padding-right: 25%;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.copyright{
+  padding: 0.5% 8%;
+  font-size: 0.8rem;
+  font-style: oblique;
+}
+
+.table-container{
+  padding: 5%;
+  background-color: rgb(248, 248, 248);
+}
+
+td,th,tr{
+
+  padding-right: 15px;
+
+}
