@@ -3,11 +3,15 @@
 
 <head>
   <meta charset="utf-8">
+  <!-- meta tags are essential if you want a responsive website -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- ?Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
@@ -19,10 +23,54 @@
 </head>
 
 <body>
+  <div class="container-fluid fixed-top navBg">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
   <section class="section-img">
     <div class="section-wrapper">
       <h1>THE FOOD YOU LOVE</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exat nulla pariatur. Excepteur sint occaecat cupidatat
+        non proident, sunt
         in culpa qui officia deserunt mollit anim id est laborum.</p>
       <form class="form" action="index.html" method="post">
         <input class="input" type="text" name="" value="" placeholder="Enter your post code">
@@ -37,19 +85,23 @@
       <div class="carousel-inner">
         <div class="carousel-item active img1">
           <img class="img rounded float img-fluid" src="img1.jpg" alt="">
-          <p>Lorem ipsum is placeholder text commonly used in the graphic, print, <br>and publishing industries for previewing layouts and visual mockups.
+          <p>Lorem ipsum is placeholder text commonly used in the graphic, print, <br>and publishing industries for
+            previewing layouts and visual mockups.
             LOREM IPSUM GENERATOR</p>
         </div>
         <div class="carousel-item img2">
           <img class="img rounded float img-fluid" src="img2.jpg" alt="">
-          <p>Lorem ipsum is placeholder text commonly used in the graphic, print, <br>and publishing industries for previewing layouts and visual mockups.
+          <p>Lorem ipsum is placeholder text commonly used in the graphic, print, <br>and publishing industries for
+            previewing layouts and visual mockups.
             LOREM IPSUM GENERATOR</p>
         </div>
       </div>
-      <button class="btn1 carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <button class="btn1 carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       </button>
-      <button class="btn1 carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <button class="btn1 carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
       </button>
     </div>
@@ -104,7 +156,8 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand logo" href="">Abhishek & company</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -161,10 +214,21 @@
     </table>
 
   </section>
+  <footer>
+    <p class="copyright">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy
+      and Content Policies. All trademarks are properties of their respective owners. 2008-2021 © Abhishek & company
+      Ltd.
+      All rights
+      reserved.</p>
+  </footer>
+
+  <!-- Bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
 </body>
-<footer>
-  <p class="copyright">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2021 © Abhishek & company Ltd. All rights
-    reserved.</p>
-</footer>
 
 </html>
